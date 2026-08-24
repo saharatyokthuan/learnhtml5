@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="แบบฝึกหัดทดสอบความรู้ HTML5 ฉบับสมบูรณ์">
+    <meta name="description" content="บทนำเกี่ยวกับ HTML - พื้นฐาน HTML5">
     <meta name="author" content="ผู้เรียน HTML5">
     <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content="TEST HTML5 (ทดสอบ HTML5)">
-    <meta property="og:description" content="แบบฝึกหัดทดสอบความรู้ HTML5 ฉบับสมบูรณ์">
+    <meta property="og:title" content="บทนำเกี่ยวกับ HTML">
+    <meta property="og:description" content="เรียนรู้พื้นฐาน HTML5 ฉบับสมบูรณ์">
     <meta property="og:type" content="website">
 
-    <title>TEST HTML5 (ทดสอบ HTML5) - ฉบับสมบูรณ์</title>
+    <title>บทนำเกี่ยวกับ HTML - TEST HTML5</title>
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -24,7 +24,7 @@
 <body>
 
     <header>
-        <h1>📚 <span class="highlight">บทที่ 1</span> : พื้นฐาน HTML5</h1>
+        <h1>📚 <span class="highlight">บทนำเกี่ยวกับ</span> HTML</h1>
         <nav>
             <a href="index.html" class="active"><i class="fas fa-home"></i> หน้าแรก</a>
             <a href="lesson.html"><i class="fas fa-book"></i> บทเรียน</a>
@@ -36,17 +36,115 @@
 
     <main>
         <section>
-            <h2>📖 โครงสร้างของ HTML5</h2>
+            <h2>📖 HTML คืออะไร?</h2>
 
-            <p>ไฟล์นี้สร้างขึ้นมาเพื่อทดสอบความรู้ <strong>HTML5</strong> ที่ได้เรียนมา ครอบคลุมตั้งแต่โครงสร้างพื้นฐานจนถึงการใช้งาน Semantic Tags ต่างๆ</p>
-
-            <div class="alert">
-                <i class="fas fa-lightbulb"></i>
-                <strong>เคล็ดลับ:</strong> HTML5 เป็นมาตรฐานเว็บสมัยใหม่ที่รองรับการทำงานบนทุกอุปกรณ์
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle"></i>
+                <strong>HTML</strong> คือภาษามาร์กอัปมาตรฐานสำหรับการสร้างเว็บเพจ
             </div>
 
+            <p><strong>HTML</strong> ย่อมาจาก <strong>Hyper Text Markup Language</strong></p>
+
+            <ul>
+                <li>HTML คือภาษามาร์กอัปมาตรฐานสำหรับการสร้างเว็บเพจ</li>
+                <li>HTML อธิบายโครงสร้างของหน้าเว็บ</li>
+                <li>HTML ประกอบด้วยองค์ประกอบหลายอย่าง</li>
+                <li>องค์ประกอบ HTML จะบอกเบราว์เซอร์ถึงวิธีการแสดงเนื้อหา</li>
+                <li>องค์ประกอบ HTML ใช้สำหรับระบุส่วนต่างๆ ของเนื้อหา เช่น <strong>"นี่คือหัวข้อ"</strong>, <strong>"นี่คือย่อหน้า"</strong>, <strong>"นี่คือลิงก์"</strong> เป็นต้น</li>
+            </ul>
+
+            <hr>
+
+            <h2>📄 เอกสาร HTML อย่างง่าย</h2>
+
+            <div class="code-block">
+                <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+                <span class="tag-color">&lt;html&gt;</span><br>
+                <span class="tag-color">&lt;head&gt;</span><br>
+                &nbsp;&nbsp;<span class="tag-color">&lt;title&gt;</span>Page Title<span class="tag-color">&lt;/title&gt;</span><br>
+                <span class="tag-color">&lt;/head&gt;</span><br>
+                <span class="tag-color">&lt;body&gt;</span><br>
+                <br>
+                &nbsp;&nbsp;<span class="tag-color">&lt;h1&gt;</span>My First Heading<span class="tag-color">&lt;/h1&gt;</span><br>
+                &nbsp;&nbsp;<span class="tag-color">&lt;p&gt;</span>My first paragraph.<span class="tag-color">&lt;/p&gt;</span><br>
+                <br>
+                <span class="tag-color">&lt;/body&gt;</span><br>
+                <span class="tag-color">&lt;/html&gt;</span>
+            </div>
+
+            <h3>🔍 ตัวอย่างอธิบาย</h3>
+
+            <div class="info-box">
+                <ul>
+                    <li><strong>คำประกาศ <code>&lt;!DOCTYPE html&gt;</code></strong> ระบุว่าเอกสารนี้เป็นเอกสาร HTML5</li>
+                    <li><strong>องค์ประกอบ <code>&lt;html&gt;</code></strong> เป็นองค์ประกอบหลักของหน้า HTML</li>
+                    <li><strong>องค์ประกอบ <code>&lt;head&gt;</code></strong> ประกอบด้วยข้อมูลเมตาเกี่ยวกับหน้า HTML</li>
+                    <li><strong>องค์ประกอบ <code>&lt;title&gt;</code></strong> ระบุชื่อเรื่องสำหรับหน้า HTML (ซึ่งจะแสดงในแถบชื่อเรื่องของเบราว์เซอร์หรือในแท็บของหน้า)</li>
+                    <li><strong>องค์ประกอบ <code>&lt;body&gt;</code></strong> กำหนดส่วนเนื้อหาของเอกสาร และเป็นภาชนะสำหรับเนื้อหาที่มองเห็นได้ทั้งหมด เช่น หัวข้อ ย่อหน้า รูปภาพ ไฮเปอร์ลิงก์ ตาราง รายการ เป็นต้น</li>
+                    <li><strong>องค์ประกอบ <code>&lt;h1&gt;</code></strong> กำหนดหัวข้อขนาดใหญ่</li>
+                    <li><strong>องค์ประกอบ <code>&lt;p&gt;</code></strong> กำหนดย่อหน้า</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h2>🧩 องค์ประกอบ HTML คืออะไร?</h2>
+
+            <p>องค์ประกอบ HTML ถูกกำหนดโดยแท็กเปิด เนื้อหา และแท็กปิด:</p>
+
+            <div class="code-block">
+                &lt;tagname&gt; เนื้อหาตรงนี้... &lt;/tagname&gt;
+            </div>
+
+            <p>องค์ประกอบ HTML คือทุกอย่างตั้งแต่แท็กเปิดจนถึงแท็กปิด:</p>
+
+            <div class="code-block">
+                <span class="tag-color">&lt;h1&gt;</span>My First Heading<span class="tag-color">&lt;/h1&gt;</span><br>
+                <span class="tag-color">&lt;p&gt;</span>My first paragraph.<span class="tag-color">&lt;/p&gt;</span>
+            </div>
+
+            <table class="info-table">
+                <thead>
+                    <tr>
+                        <th>Start tag</th>
+                        <th>Element content</th>
+                        <th>End tag</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;h1&gt;</code></td>
+                        <td>My First Heading</td>
+                        <td><code>&lt;/h1&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;p&gt;</code></td>
+                        <td>My first paragraph.</td>
+                        <td><code>&lt;/p&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;br&gt;</code></td>
+                        <td>none</td>
+                        <td>none</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="alert alert-warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <strong>หมายเหตุ:</strong> องค์ประกอบ HTML บางอย่างไม่มีเนื้อหา (เช่น องค์ประกอบ <code>&lt;br&gt;</code>) องค์ประกอบเหล่านี้เรียกว่า <strong>องค์ประกอบว่างเปล่า</strong> องค์ประกอบว่างเปล่าไม่มีแท็กปิด!
+            </div>
+
+            <hr>
+
+            <h2>🌐 เว็บเบราว์เซอร์</h2>
+
+            <p>จุดประสงค์ของเว็บเบราว์เซอร์ (Chrome, Edge, Firefox, Safari) คือการอ่านเอกสาร HTML และแสดงผลอย่างถูกต้อง</p>
+
+            <p>เบราว์เซอร์จะไม่แสดงแท็ก HTML โดยตรง แต่จะใช้แท็กเหล่านั้นในการกำหนดวิธีการแสดงผลเอกสาร:</p>
+
             <figure>
-                <img src="html5-structure.png" alt="โครงสร้าง HTML5">
+                <img src="html5-structure.png" alt="โครงสร้างหน้าเว็บ HTML">
                 <figcaption>
                     <i class="fas fa-image"></i> ภาพแสดงโครงสร้างของเอกสาร HTML5
                 </figcaption>
@@ -54,26 +152,82 @@
 
             <hr>
 
-            <p>บทนี้เรียนรู้เกี่ยวกับ <strong>โครงสร้างของ HTML5</strong> พร้อมตัวอย่างการใช้งานจริง ซึ่งประกอบด้วยแท็กสำคัญดังนี้:</p>
+            <h2>🏗️ โครงสร้างหน้า HTML</h2>
 
-            <article>
-                <h3>✨ Semantic Tags ใน HTML5</h3>
-                <p>คุณสามารถใช้ <code>&lt;article&gt;</code> สำหรับเนื้อหาที่เป็นอิสระต่อกัน โดยแท็ก Semantic สำคัญๆ ได้แก่:</p>
-                <ul>
-                    <li><strong>&lt;header&gt;</strong> — ส่วนหัวของหน้าเว็บหรือส่วนย่อย</li>
-                    <li><strong>&lt;nav&gt;</strong> — เมนูนำทาง</li>
-                    <li><strong>&lt;main&gt;</strong> — เนื้อหาหลักของหน้า</li>
-                    <li><strong>&lt;section&gt;</strong> — กลุ่มเนื้อหาที่เกี่ยวข้องกัน</li>
-                    <li><strong>&lt;article&gt;</strong> — เนื้อหาที่เป็นอิสระ (ข่าว, บล็อก)</li>
-                    <li><strong>&lt;aside&gt;</strong> — เนื้อหาข้างเคียง (sidebar)</li>
-                    <li><strong>&lt;figure&gt;</strong> — รูปภาพพร้อมคำอธิบาย</li>
-                    <li><strong>&lt;footer&gt;</strong> — ส่วนท้ายของหน้าเว็บ</li>
-                </ul>
-            </article>
+            <p>ด้านล่างนี้คือภาพแสดงโครงสร้างของหน้าเว็บ HTML:</p>
 
-            <div class="info-box">
-                <h4><i class="fas fa-info-circle"></i> เกร็ดความรู้</h4>
-                <p>HTML5 ถูกพัฒนาโดย <strong>W3C</strong> และ <strong>WHATWG</strong> เพื่อเป็นมาตรฐานเว็บยุคใหม่ที่รองรับการใช้งานบนอุปกรณ์ทุกประเภท รวมถึงสมาร์ทโฟนและแท็บเล็ต</p>
+            <div class="code-block">
+                <span class="tag-color">&lt;html&gt;</span><br>
+                <span class="tag-color">&lt;head&gt;</span><br>
+                &nbsp;&nbsp;<span class="tag-color">&lt;title&gt;</span>ชื่อหน้า<span class="tag-color">&lt;/title&gt;</span><br>
+                <span class="tag-color">&lt;/head&gt;</span><br>
+                <span class="tag-color">&lt;body&gt;</span><br>
+                &nbsp;&nbsp;<span class="tag-color">&lt;h1&gt;</span>นี่คือหัวข้อ<span class="tag-color">&lt;/h1&gt;</span><br>
+                &nbsp;&nbsp;<span class="tag-color">&lt;p&gt;</span>นี่คือย่อหน้า<span class="tag-color">&lt;/p&gt;</span><br>
+                &nbsp;&nbsp;<span class="tag-color">&lt;p&gt;</span>นี่คือย่อหน้าถัดไป<span class="tag-color">&lt;/p&gt;</span><br>
+                <span class="tag-color">&lt;/body&gt;</span><br>
+                <span class="tag-color">&lt;/html&gt;</span>
+            </div>
+
+            <div class="alert alert-info">
+                <i class="fas fa-lightbulb"></i>
+                <strong>หมายเหตุ:</strong> เนื้อหาภายในส่วน <code>&lt;body&gt;</code> จะแสดงผลในเบราว์เซอร์ ส่วนเนื้อหาภายในองค์ประกอบ <code>&lt;title&gt;</code> จะแสดงในแถบชื่อเรื่องของเบราว์เซอร์หรือในแท็บของหน้าเว็บ
+            </div>
+
+            <hr>
+
+            <h2>📜 ประวัติ HTML</h2>
+
+            <p>นับตั้งแต่ยุคแรกเริ่มของเวิลด์ไวด์เว็บ ก็มี HTML หลายเวอร์ชันออกมาแล้ว:</p>
+
+            <table class="info-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Version</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1989</td><td>Tim Berners-Lee invented www</td></tr>
+                    <tr><td>1991</td><td>Tim Berners-Lee invented HTML</td></tr>
+                    <tr><td>1993</td><td>Dave Raggett drafted HTML+</td></tr>
+                    <tr><td>1995</td><td>HTML Working Group defined HTML 2.0</td></tr>
+                    <tr><td>1997</td><td>W3C Recommendation: HTML 3.2</td></tr>
+                    <tr><td>1999</td><td>W3C Recommendation: HTML 4.01</td></tr>
+                    <tr><td>2000</td><td>W3C Recommendation: XHTML 1.0</td></tr>
+                    <tr><td>2008</td><td>WHATWG HTML5 First Public Draft</td></tr>
+                    <tr><td>2012</td><td>WHATWG HTML5 Living Standard</td></tr>
+                    <tr><td>2014</td><td>W3C Recommendation: HTML5</td></tr>
+                    <tr><td>2016</td><td>W3C Candidate Recommendation: HTML 5.1</td></tr>
+                    <tr><td>2017</td><td>W3C Recommendation: HTML5.1 2nd Edition</td></tr>
+                    <tr><td>2017</td><td>W3C Recommendation: HTML5.2</td></tr>
+                </tbody>
+            </table>
+
+            <div class="alert alert-success">
+                <i class="fas fa-check-circle"></i>
+                <strong>บทแนะนำนี้เป็นไปตามมาตรฐาน HTML5 ล่าสุด</strong>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <i class="fas fa-book"></i>
+                    <h4>บทเรียน</h4>
+                    <p>เรียนรู้ HTML5 ตั้งแต่พื้นฐาน</p>
+                    <a href="lesson.html" class="btn btn-primary">เริ่มเรียน</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-pencil-alt"></i>
+                    <h4>แบบทดสอบ</h4>
+                    <p>ทดสอบความรู้ของคุณ</p>
+                    <a href="quiz.html" class="btn btn-success">ทำข้อสอบ</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-info-circle"></i>
+                    <h4>เกี่ยวกับเรา</h4>
+                    <p>รู้จักทีมผู้พัฒนา</p>
+                    <a href="about.html" class="btn btn-primary">อ่านเพิ่ม</a>
+                </div>
             </div>
         </section>
     </main>
@@ -91,8 +245,8 @@
         <div class="footer-links">
             <a href="#">นโยบายความเป็นส่วนตัว</a>
             <a href="#">ข้อกำหนดการใช้งาน</a>
-            <a href="#">ติดต่อเรา</a>
-            <a href="#">เกี่ยวกับเรา</a>
+            <a href="contact.html">ติดต่อเรา</a>
+            <a href="about.html">เกี่ยวกับเรา</a>
         </div>
 
         <p class="credit">
@@ -101,13 +255,12 @@
     </footer>
 
     <script>
-        console.log('%c 🌟 ยินดีต้อนรับสู่หน้าแรก!', 'font-size: 18px; color: #2c3e50; font-weight: bold;');
+        console.log('%c 🌟 ยินดีต้อนรับสู่บทนำเกี่ยวกับ HTML!', 'font-size: 18px; color: #2c3e50; font-weight: bold;');
 
         window.addEventListener('DOMContentLoaded', function() {
             console.log('🚀 โหลดหน้าเว็บเสร็จเรียบร้อยแล้ว');
-
-            const items = document.querySelectorAll('article ul li');
-            console.log(`📋 มีทั้งหมด ${items.length} รายการในบทความ`);
+            const items = document.querySelectorAll('ul li');
+            console.log(`📋 มีทั้งหมด ${items.length} รายการในเนื้อหา`);
         });
 
         document.querySelectorAll('nav a').forEach(link => {
