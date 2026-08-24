@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="แบบทดสอบ HTML5">
+    <title>แบบทดสอบ HTML5 - TEST HTML5</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>✍️ <span class="highlight">แบบทดสอบ</span> HTML5</h1>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> หน้าแรก</a>
+            <a href="lesson.html"><i class="fas fa-book"></i> บทเรียน</a>
+            <a href="quiz.html" class="active"><i class="fas fa-pencil-alt"></i> แบบทดสอบ</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> เกี่ยวกับ</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> ติดต่อ</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2><i class="fas fa-question-circle"></i> ทดสอบความรู้ HTML5</h2>
+
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle"></i>
+                <strong>คำแนะนำ:</strong> เลือกคำตอบที่ถูกต้อง แล้วคลิก "ตรวจสอบ" เพื่อดูผลลัพธ์
+            </div>
+
+            <div class="score-display">
+                <i class="fas fa-star"></i>
+                คะแนนของคุณ: <span class="score-number" id="scoreDisplay">0</span>
+                <span class="score-total">/ 5 ข้อ</span>
+            </div>
+
+            <div class="quiz-item" data-quiz="1">
+                <div class="question">
+                    <i class="fas fa-question-circle"></i>
+                    ข้อ 1. แท็กใดใช้สำหรับกำหนดโครงสร้างหลักของเอกสาร HTML5?
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> &lt;head&gt;</label>
+                    <label><input type="radio" name="q1" value="b"> &lt;body&gt;</label>
+                    <label><input type="radio" name="q1" value="c"> &lt;html&gt;</label>
+                    <label><input type="radio" name="q1" value="d"> &lt;main&gt;</label>
+                </div>
+                <div class="answer" data-answer="c">
+                    <i class="fas fa-check-circle"></i> <strong>ถูกต้อง!</strong> แท็ก &lt;html&gt; คือรากของเอกสาร HTML ทั้งหมด
+                </div>
+                <button class="btn btn-primary check-btn"><i class="fas fa-check"></i> ตรวจสอบ</button>
+            </div>
+
+            <div class="quiz-item" data-quiz="2">
+                <div class="question">
+                    <i class="fas fa-question-circle"></i>
+                    ข้อ 2. แท็ก Semantic ใดใช้สำหรับเนื้อหาหลักของหน้าเว็บ?
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> &lt;header&gt;</label>
+                    <label><input type="radio" name="q2" value="b"> &lt;main&gt;</label>
+                    <label><input type="radio" name="q2" value="c"> &lt;section&gt;</label>
+                    <label><input type="radio" name="q2" value="d"> &lt;article&gt;</label>
+                </div>
+                <div class="answer" data-answer="b">
+                    <i class="fas fa-check-circle"></i> <strong>ถูกต้อง!</strong> &lt;main&gt; ใช้สำหรับเนื้อหาหลักของหน้าเว็บ
+                </div>
+                <button class="btn btn-primary check-btn"><i class="fas fa-check"></i> ตรวจสอบ</button>
+            </div>
+
+            <div class="quiz-item" data-quiz="3">
+                <div class="question">
+                    <i class="fas fa-question-circle"></i>
+                    ข้อ 3. แท็กใดใช้สำหรับแสดงรูปภาพพร้อมคำอธิบาย?
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> &lt;img&gt;</label>
+                    <label><input type="radio" name="q3" value="b"> &lt;picture&gt;</label>
+                    <label><input type="radio" name="q3" value="c"> &lt;figure&gt;</label>
+                    <label><input type="radio" name="q3" value="d"> &lt;image&gt;</label>
+                </div>
+                <div class="answer" data-answer="c">
+                    <i class="fas fa-check-circle"></i> <strong>ถูกต้อง!</strong> &lt;figure&gt; ใช้ร่วมกับ &lt;figcaption&gt; สำหรับคำอธิบาย
+                </div>
+                <button class="btn btn-primary check-btn"><i class="fas fa-check"></i> ตรวจสอบ</button>
+            </div>
+
+            <div class="quiz-item" data-quiz="4">
+                <div class="question">
+                    <i class="fas fa-question-circle"></i>
+                    ข้อ 4. แท็กใดใช้สำหรับสร้างลิงก์?
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> &lt;link&gt;</label>
+                    <label><input type="radio" name="q4" value="b"> &lt;a&gt;</label>
+                    <label><input type="radio" name="q4" value="c"> &lt;href&gt;</label>
+                    <label><input type="radio" name="q4" value="d"> &lt;url&gt;</label>
+                </div>
+                <div class="answer" data-answer="b">
+                    <i class="fas fa-check-circle"></i> <strong>ถูกต้อง!</strong> &lt;a&gt; (anchor) ใช้สำหรับสร้างลิงก์
+                </div>
+                <button class="btn btn-primary check-btn"><i class="fas fa-check"></i> ตรวจสอบ</button>
+            </div>
+
+            <div class="quiz-item" data-quiz="5">
+                <div class="question">
+                    <i class="fas fa-question-circle"></i>
+                    ข้อ 5. DOCTYPE ของ HTML5 คือข้อใด?
+                </div>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> &lt;!DOCTYPE HTML PUBLIC&gt;</label>
+                    <label><input type="radio" name="q5" value="b"> &lt;!DOCTYPE html&gt;</label>
+                    <label><input type="radio" name="q5" value="c"> &lt;!DOCTYPE html5&gt;</label>
+                    <label><input type="radio" name="q5" value="d"> &lt;DOCTYPE html&gt;</label>
+                </div>
+                <div class="answer" data-answer="b">
+                    <i class="fas fa-check-circle"></i> <strong>ถูกต้อง!</strong> &lt;!DOCTYPE html&gt; คือ DOCTYPE ของ HTML5
+                </div>
+                <button class="btn btn-primary check-btn"><i class="fas fa-check"></i> ตรวจสอบ</button>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-success" id="checkAllBtn"><i class="fas fa-check-double"></i> ตรวจสอบทั้งหมด</button>
+                <button class="btn btn-warning" id="resetAllBtn"><i class="fas fa-redo"></i> รีเซ็ตทั้งหมด</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <strong>เว็บไซต์ทดสอบ HTML5</strong> | พัฒนาเพื่อการศึกษา</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">นโยบายความเป็นส่วนตัว</a>
+            <a href="#">ข้อกำหนดการใช้งาน</a>
+            <a href="#">ติดต่อเรา</a>
+        </div>
+    </footer>
+
+    <script>
+        let score = 0;
+        const totalQuestions = 5;
+
+        function checkAnswer(quizItem) {
+            const radioName = 'q' + quizItem.dataset.quiz;
+            const selected = document.querySelector(`input[name="${radioName}"]:checked`);
+            const answerDiv = quizItem.querySelector('.answer');
+            const correctAnswer = answerDiv.dataset.answer;
+
+            answerDiv.classList.remove('show', 'correct', 'wrong');
+
+            if (!selected) {
+                alert('กรุณาเลือกคำตอบก่อนครับ!');
+                return false;
+            }
+
+            if (selected.value === correctAnswer) {
+                answerDiv.classList.add('show', 'correct');
+                return true;
+            } else {
+                answerDiv.classList.add('show', 'wrong');
+                return false;
+            }
+        }
+
+        function updateScore() {
+            let correct = 0;
+            document.querySelectorAll('.quiz-item').forEach(item => {
+                const answerDiv = item.querySelector('.answer');
+                if (answerDiv.classList.contains('correct')) {
+                    correct++;
+                }
+            });
+            score = correct;
+            document.getElementById('scoreDisplay').textContent = score;
+        }
+
+        document.querySelectorAll('.check-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const quizItem = this.closest('.quiz-item');
+                checkAnswer(quizItem);
+                updateScore();
+            });
+        });
+
+        document.getElementById('checkAllBtn').addEventListener('click', function() {
+            document.querySelectorAll('.quiz-item').forEach(item => {
+                checkAnswer(item);
+            });
+            updateScore();
+        });
+
+        document.getElementById('resetAllBtn').addEventListener('click', function() {
+            document.querySelectorAll('.quiz-item').forEach(item => {
+                const radioName = 'q' + item.dataset.quiz;
+                document.querySelectorAll(`input[name="${radioName}"]`).forEach(input => {
+                    input.checked = false;
+                });
+                const answerDiv = item.querySelector('.answer');
+                answerDiv.classList.remove('show', 'correct', 'wrong');
+            });
+            score = 0;
+            document.getElementById('scoreDisplay').textContent = '0';
+        });
+
+        console.log('📝 ยินดีต้อนรับสู่หน้าแบบทดสอบ!');
+    </script>
+
+</body>
+</html>
